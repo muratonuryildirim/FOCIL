@@ -4,7 +4,7 @@
 
 
 <div align="center">
-<img src="./resources/focil-teaser.png" width="225px">
+<img src="./resources/focil-blog.webp" width="225px">
 </div>
 
 <p align="center">
