@@ -31,17 +31,6 @@ python main.py
        --backbone resnet18
 ```
 
-## Cite
-If you want to cite the framework feel free to use this preprint citation while we await publication:
-```bibtex
-@misc{yildirim2024focil,
-      title={FOCIL: Finetune-and-Freeze for Online Class Incremental Learning by Training Randomly Pruned Sparse Experts}, 
-      author={Murat Onur Yildirim and Elif Ceren Gok Yildirim and Decebal Constantin Mocanu and Joaquin Vanschoren},
-      year={2024},
-      eprint={2403.14684},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}}
-```
 
 ## License
 
