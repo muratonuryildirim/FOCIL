@@ -1,25 +1,36 @@
 <div align="center">
-<img src="./resources/focil-icon.png" width="225px">
+<img src="./resources/teaser.png" width="225px">
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2403.14684">Paper</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#cite">Cite</a> •
-  <a href="#license">License</a> •
-  <a href="#acknowledgments">Acknowledgments</a> •
-  <a href="https://muratonuryildirim.github.io">Contact</a>
+  <a href="#-introduction">🎉Introduction</a> •
+  <a href="#-results">📝 Results</a> <br />
+  <a href="#%EF%B8%8F-how-to-use">☄️How to Use</a> •
+  <a href="#-acknowledgments">👨‍🏫Acknowledgments</a> •
+  <a href="#-contact">🤗Contact</a>
 </p>
 
-# FOCIL: Finetune-and-Freeze for Online Class Incremental Learning by Training Randomly Pruned Sparse Experts
-*FOCIL is a method proposed for Online Class-Incremental Learning. It fine-tunes the main backbone continually by training a randomly pruned sparse subnetwork for each task. Then, it freezes the trained connections to prevent forgetting. FOCIL also determines the sparsity level and learning rate per task adaptively, and ensures nearly zero forget across all tasks without expanding the network or storing replay data.* 
+## 🎉 Introduction
+* Self-Regulated Neurogenesis for Online Data-Incremental Learning (SERENA) is a lightweight and efficient method for Online Data-Incremental Learning, designed to continually adapt to streaming data without forgetting past knowledge. It automatically detects emerging concepts and tasks on the fly and fine-tunes a randomly selected sparse subnetwork per task. By freezing previously used connections, SERENA prevents interference across tasks, achieving near-zero forgetting without expanding the model or relying on replay buffers. This enables continual fine-tuning of a shared backbone while keeping memory and compute overhead minimal.*
 
+## 📝 Results
 <div align="center">
-<img src="./resources/focil-results.webp">
+  <img src="./resources/results.webp" style="width: 80%;">
+  <img src="./resources/tsne.webp" style="width: 80%;">
 </div>
 
-## How to Use
 
+## ☄️ how to use
+
+### 🕹️ Clone
+Clone this GitHub repository:
+
+```
+git clone https://github.com/muratonuryildirim/SERENA.git
+cd SERENA
+```
+
+### 🔑 Run experiment
 For example, to train 20-Task CIFAR100, run:
 
 ```
@@ -31,15 +42,15 @@ python main.py
        --backbone resnet18
 ```
 
+## 👨‍🏫 Acknowledgments
+We thank the following repos for providing helpful components/functions in our work.
+- [In-Time-Over-Parameterization](https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization)
+- [PyCIL](https://github.com/G-U-N/PyCIL)
+
+
+## 🤗 Contact
+If there are any questions, please feel free to open an issue or contact the author **M. Onur Yildirim**([m.o.yildirim@tue.nl](mailto:m.o.yildirim@tue.nl)). Enjoy the code.
 
 ## License
-
 Please check the [MIT license](./LICENSE) that is listed in this repository.
 
-## Acknowledgments
-
-We thank the following repos providing helpful components/functions in our work.
-
-- [In-Time-Over-Parameterization](https://github.com/Shiweiliuiiiiiii/In-Time-Over-Parameterization)
-- [Optuna](https://github.com/optuna/optuna)
-- [PyCIL](https://github.com/G-U-N/PyCIL)
