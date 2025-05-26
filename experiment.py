@@ -23,9 +23,7 @@ def multiple_run(args):
         for task in range(args.num_tasks):
             learner.train(task)
         t1=time.time()
-        #print_and_log('\nTotal Training Time= {:.2f} min'.format((t1-t0)/60))
 
-        #learner.evaluate()
         learner.ensemble_evaluation_majority()
         apt_run, acc_run, bwt_run = learner.report_scores()
         
