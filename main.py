@@ -1,7 +1,6 @@
 import argparse
-import time
 from dm import DataManager
-from cil_learner import Learner
+from learner import Learner
 from utils import setup
 
 def main():
@@ -21,7 +20,6 @@ def main():
     parser.add_argument('--window_size', type=int, default=10, help='method to use for sample sparsification')
     parser.add_argument('--drift_threshold', type=float, default=0.5, help='method to use for sample sparsification')
     parser.add_argument('--seed', type=int, default=0, help='random seed')
-    parser.add_argument('--num_runs', type=int, default=1, help='number of runs')
     args = parser.parse_args()
 
     setup(args) 
