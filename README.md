@@ -11,7 +11,7 @@
 </p>
 
 ## 🎉 Introduction
-* Self-Regulated Neurogenesis for Online Data-Incremental Learning (SERENA) is a lightweight and efficient method for Online Data-Incremental Learning, designed to continually adapt to streaming data without forgetting past knowledge. It automatically detects emerging concepts and tasks on the fly and fine-tunes a randomly selected sparse subnetwork per task. By freezing previously used connections, SERENA prevents interference across tasks, achieving near-zero forgetting without expanding the model or relying on replay buffers. This enables continual fine-tuning of a shared backbone while keeping memory and compute overhead minimal.*
+* Self-Regulated Neurogenesis for Online Data-Incremental Learning (SERENA) is a lightweight and efficient method for Online Data-Incremental Learning, designed to continually adapt to streaming data without forgetting past knowledge. It automatically detects emerging concepts and tasks on the fly and fine-tunes a randomly selected sparse subnetwork per task. By freezing previously used connections, SERENA prevents interference across tasks, achieving near-zero forgetting without expanding the model or relying on replay buffers. This enables continual fine-tuning of a shared backbone while keeping memory and compute overhead minimal.
 
 ## 📝 Results
 <div align="center">
